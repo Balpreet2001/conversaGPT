@@ -7,19 +7,6 @@ const Chat = () => {
   const [result, setResult] = useState("");
   const { REACT_APP_API_ENDPOINT } = process.env;
 
-  // useEffect(() => {
-  //   // Fetch data when the component mounts
-  //   fetchData();
-  // },);
-
-  // const fetchData = async () => {
-  //   try {
-  //     const response = await axios.get(`${REACT_APP_API_ENDPOINT}/my-api/`);
-  //     setResult(response.data);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -54,7 +41,7 @@ const Chat = () => {
           </button>
         </form>
         <div className="m-10 h-max border-2 rounded-md border-slate-200 bg-blue-100">
-          <h5 className="text-grey-500">{result}</h5>
+          <h5 className="text-grey-500 p-6">{result}</h5>
         </div>
       </div>
     </div>
